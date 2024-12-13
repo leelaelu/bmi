@@ -135,8 +135,8 @@ if st.button("Predict"):
 
         # 결과 출력
         y_name = model.get("y_names", ["Prediction"])[0]
-        st.success(f" {raw_value}{y_name}: {prediction}")
-        bmi = weight / height ** 2
+        st.success(f"{y_name}: {prediction:.2f}회")
+        bmi = weight / ((height/100) ** 2)
         st.write(f"당신의 BMI 지수는 : {bmi:.2f}")
         st.image("https://t3.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/hO6/image/l7G5BRSPFosd8YvEqUDnLqx8v8k")
     except Exception as e:
