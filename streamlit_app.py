@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np  # numpy를 import해야 함
 
 # Streamlit 제목
-st.title("주택 가격 예측 서비스!")
+st.title("bmi에 따른 추천 운동과 식단")
 
 # GitHub Raw 파일 URL과 모델 유형
 GITHUB_RAW_URL = "https://github.com/leelaelu/bmi/raw/refs/heads/main/xgb_model.pkl"
@@ -100,7 +100,7 @@ if df is not None:
 
 
 # 예측 버튼 및 결과 출력
-prediction = 0
+prediction = -1
 if st.button("Predict"):
     try:
         # 입력 데이터 준비
