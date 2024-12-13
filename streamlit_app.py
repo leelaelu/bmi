@@ -100,7 +100,7 @@ if df is not None:
 
 
 # 예측 버튼 및 결과 출력
-prediction = None
+prediction = -1
 if st.button("Predict"):
     try:
         # 입력 데이터 준비
@@ -144,7 +144,7 @@ if st.button("Predict"):
 
 # 예측 결과에 따라 콘텐츠 표시
 
-if prediction < 0.5: # 정상
+if 0 <= prediction and prediction < 0.5: # 정상
     st.write("### Prediction Result: Low Price Segment")
     st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")  # YouTube 썸네일
     st.text("일반식을 추천합니다.")
