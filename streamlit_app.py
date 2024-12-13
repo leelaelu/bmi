@@ -149,17 +149,17 @@ if 0 <= prediction and prediction < 0.5: # 정상
     st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")  # YouTube 썸네일
     st.text("일반식을 추천합니다.")
 
-elif prediction >= 0.5: # 비만 1단계
+elif prediction <= 3.5: # 비만 1단계
     st.write("### Prediction Result: Low Price Segment")
     st.video("https://youtu.be/swRNeYw1JkY?si=dlDjPClrWnlYhW37")  # YouTube 썸네일
     st.text("단백질식을 추천합니다.")
 
-elif prediction >= 3.5: # 비만 2단계
+elif prediction <= 4.5: # 비만 2단계
     st.write("### Prediction Result: Low Price Segment")
     st.video("https://youtu.be/_ffhxHV630A?si=7CP9-pcRkZTrLQDv")  # YouTube 썸네일
     st.text("채식을 추천합니다.")
 
-elif prediction >= 4.5: # 비만 3단계
+elif prediction > 4.5: # 비만 3단계
     st.write("### Prediction Result: Low Price Segment")
     st.video("https://youtu.be/LXTW1Nm_Z3Y?si=AFO2-AtPMEUSb5_O")  # YouTube 썸네일
     st.text("저염식을 추천합니다.")
