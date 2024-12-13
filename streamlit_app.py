@@ -132,7 +132,7 @@ if st.button("Predict"):
 
 # 예측 결과에 따라 콘텐츠 표시
 
-bmi = 
+bmi = 0
 st.write(f"당신의 BMI 지수는 : {bmi}")
 
 if prediction == 0:
