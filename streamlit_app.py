@@ -100,7 +100,7 @@ if df is not None:
 
 
 # 예측 버튼 및 결과 출력
-prediction = -1
+prediction = None
 if st.button("Predict"):
     try:
         # 입력 데이터 준비
