@@ -144,7 +144,7 @@ if st.button("Predict"):
 
 # 예측 결과에 따라 콘텐츠 표시
 
-if 0prediction >= 0 and prediction < 0.5: # 정상
+if prediction >= 0 and prediction < 0.5: # 정상
     st.write("### Prediction Result: Low Price Segment")
     st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")  # YouTube 썸네일
     st.text("일반식을 추천합니다.")
