@@ -144,26 +144,26 @@ if st.button("Predict"):
 
 # 예측 결과에 따라 콘텐츠 표시
 
-if prediction == 0:
+if prediction < 0.5: # 정상
     st.write("### Prediction Result: Low Price Segment")
     st.image("https://via.placeholder.com/300", caption="Low Segment Image 1")
     st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")  # YouTube 썸네일
-    st.text("운동 횟수가 0회입니다.")
+    st.text("추~~")
 
-elif prediction == 3:
+elif prediction >= 0.5: # 비만 1단계
     st.write("### Prediction Result: Low Price Segment")
     st.image("https://via.placeholder.com/300", caption="Low Segment Image 1")
     st.video("https://youtu.be/swRNeYw1JkY?si=dlDjPClrWnlYhW37")  # YouTube 썸네일
-    st.text("운동 횟수가 3회입니다.")
+    st.text("추천ㅇㄴㄹ주 3회입니다.")
 
-elif prediction == 4:
+elif prediction >= 3.5: # 비만 2단계
     st.write("### Prediction Result: Low Price Segment")
     st.image("https://via.placeholder.com/300", caption="Low Segment Image 1")
     st.video("https://youtu.be/_ffhxHV630A?si=7CP9-pcRkZTrLQDv")  # YouTube 썸네일
-    st.text("운동 횟수가 4회입니다.")
+    st.text("추천 ㄴㅁㅇㄹ 주 4회입니다.")
 
-elif prediction == 5:
+elif prediction >= 4.5: # 비만 3단계
     st.write("### Prediction Result: Low Price Segment")
     st.image("https://via.placeholder.com/300", caption="Low Segment Image 1")
     st.video("https://youtu.be/LXTW1Nm_Z3Y?si=AFO2-AtPMEUSb5_O")  # YouTube 썸네일
-    st.text("운동 횟수가 5회입니다.")
+    st.text("추천 운ㅇㄹ주 5회입니다.")
