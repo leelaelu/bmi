@@ -146,7 +146,7 @@ if st.button("Predict"):
 
 if prediction >= -0.5 and prediction < 0.5: # 정상
     st.write("### Prediction Result: Low Price Segment")
-    st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")  # YouTube 썸네일
+    st.video("https://www.youtube.com/watch?v=02wYI6aJEHk")  # YouTube 썸네일
     st.text("일반식을 추천합니다.")
 
 elif prediction >= 0.5 and prediction < 3.5: # 비만 1단계
