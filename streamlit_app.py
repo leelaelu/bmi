@@ -139,7 +139,7 @@ if prediction!=0:
         with col1:
             st.image("https://via.placeholder.com/300", caption="Low Segment Image 1")
             st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")  # YouTube 썸네일
-            st.text("Description for Low Segment 1")
+            st.text("운동 횟수가 3회입니다.")
 
         with col2:
             st.image("https://via.placeholder.com/300", caption="Low Segment Image 2")
