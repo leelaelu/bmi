@@ -126,7 +126,7 @@ if st.button("Predict"):
 
         # 결과 출력
         y_name = model.get("y_names", ["Prediction"])[0]
-        st.success(f" [raw_value]{y_name}: {prediction}")
+        st.success(f" {raw_value}{y_name}: {prediction}")
     except Exception as e:
         st.error(f"Error during prediction: {e}")
 
